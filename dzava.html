@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Джава</title>
+  <style>
+  p {
+	background-color: yellow;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 2px dotted black;
+	padding: -100px;
+  }
+  </style>
+ </head>
+ <body>  
+
+<p style="color: green;">Свидание назначено вечером.</p>
+
+<script>
+
+
+var a = 17;
+var b = a.toString(2);
+console.log(b);
+b = b.split('').map(Number);
+var b1 = b.join('').split('').map(Number);
+b1[b.length-3] = (b1[b.length-3]+1)%2;
+b1[b.length-2] = (b1[b.length-2]+1)%2;
+b1[b.length-1] = (b1[b.length-1]+1)%2;
+b1 = b1.join('');
+console.log(b1);
+b1 = parseInt(b1, 2);
+var b2 = b.join('').split('').map(Number);
+b2[b.length-4] = (b2[b.length-4]+1)%2;
+b2[b.length-2] = (b2[b.length-2]+1)%2;
+b2[b.length-1] = (b2[b.length-1]+1)%2;
+b2 = b2.join('');
+console.log(b2);
+b2 = parseInt(b2, 2);
+var b3 = b.join('').split('').map(Number);
+b3[b.length-3] = (b3[b.length-3]+1)%2;
+b3[b.length-4] = (b3[b.length-4]+1)%2;
+b3 = b3.join('');
+console.log(b3);
+b3 = parseInt(b3, 2);
+
+
+var c = a^b1^b2^b3;
+console.log(c);
+console.log(a);
+console.log(b1);
+console.log(b2);
+console.log(b3);
+
+
+</script>
+
+ </body>
+</html>
