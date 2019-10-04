@@ -5,7 +5,7 @@
     <style>
     #rect {
         margin: 150px;
-        width: 100px;
+        width: 150px;
         height: 100px;
         background: #50c878;
     }
@@ -15,7 +15,7 @@
 <div id="rect"></div>
 <script>
 var square = document.getElementById("rect");
-var angle = 0;
+var angle = 15;
 function rotate() {
     angle = (angle + 2)%360;
     square.style.transform = "rotate(" + angle + "deg)";
